@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>H09Form03.html</title>
+</head>
+
+<body>
+	<h2>input태그의 버튼속성</h2>
+	
+	<fieldset>
+		<form action="">
+			이름 : <input type="text" name="name" value="코스모" />
+			<br />
+			직업 : <input type="radio" name="job" value="S" checked="checked" />학생
+			&nbsp;&nbsp;
+			<input type="radio" name="job" value="T" />강사
+			<br />
+			자기소개 : <textarea name="intro" cols="50" rows="5">내용은 여기에 입력됨</textarea>
+			<br />
+			
+			<!-- 
+			type이 image와 submit은 둘 다 폼값을 전송할 때 사용한다.
+			또한 form내부에서 엔터키를 눌렀을 때 즉시 전송된다.
+			 -->
+			<input type="image" src="./images/button.jpg" />
+			
+			<br />
+			
+			<input type="submit" value="전송" />
+			<br />
+			
+			<!-- 페이지의 초기 입력상태로 되돌려준다(내용삭제는 아님) -->
+			<input type="reset" value="리셋" />
+			<br />
+		
+			<!-- button태그는 input의 type='button'과 동일하다 -->
+			<!-- 눌렀을 때 기본동작이 없어서 주로 이벤트핸들러와 javascript함수 연동 때 사용한다 -->
+			<botton type="button" onclick="alert('경고창입니다');">버튼타이틀</botton>
+			<br />
+			
+			<input type="button" onmouseover="alert('마우스올렸니?'');" 
+					value="MouseOver이벤트" />
+			&nbsp;&nbsp;
+			<input type="button" onmouseout="alert('마우스내렸니?');" 
+					value="MouseOut이벤트" />
+		</form>
+	</fieldset>
+</body>
+
+</html>
